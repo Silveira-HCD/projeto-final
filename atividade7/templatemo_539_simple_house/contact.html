@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contato - Cannabis House</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
+    <link href="css/templatemo-style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top box -->
+        <div class="placeholder">
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/cannabis-banner.jpg">
+                <div class="tm-header">
+                    <div class="row tm-header-inner">
+                        <div class="col-md-6 col-12">
+                            <img src="img/cannabis-logo.png" alt="Logo Cannabis House" class="tm-site-logo" />
+                            <div class="tm-site-text-box">
+                                <h1 class="tm-site-title">Cannabis House</h1>
+                                <h6 class="tm-site-description">Produtos Naturais e Orgânicos</h6>
+                            </div>
+                        </div>
+                        <nav class="col-md-6 col-12 tm-nav">
+                            <ul class="tm-nav-ul">
+                                <li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Home</a></li>
+                                <li class="tm-nav-li"><a href="about.html" class="tm-nav-link">Sobre a Cannabis House</a></li>
+                                <li class="tm-nav-li"><a href="contact.html" class="tm-nav-link active">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <header class="row tm-welcome-section">
+                <h2 class="col-12 text-center tm-section-title">Entre em Contato</h2>
+                <p class="col-12 text-center">Tire suas dúvidas ou envie sugestões para a Cannabis House.</p>
+            </header>
+
+            <!-- Formulário de Contato -->
+            <div class="tm-section tm-container-inner">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem:</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="tm-btn tm-btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tm-description-box">
+                            <h4 class="tm-gallery-title">Informações de Contato</h4>
+                            <p class="tm-mb-45">Endereço: Rua das Maconhas, 123 - Cuiabá, MT<br>Telefone: (65) 98125-7566<br>E-mail: contato@cannabishouse.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="tm-footer text-center">
+            <p>Copyright &copy; 2023 Cannabis House | Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+
+            if (name === '' || email === '' || message === '') {
+                alert('Por favor, preencha todos os campos.');
+            } else if (!validateEmail(email)) {
+                alert('Por favor, insira um e-mail válido.');
+            } else {
+                alert('Mensagem enviada com sucesso!');
+                
+            }
+        });
+
+        function validateEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Botões */
+.tm-btn-primary {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tm-btn-primary:hover,
+.tm-btn-primary:focus {
+  background-color: #45a049; /* Verde mais escuro */
+}
+
+.tm-btn-success {
+  background-color: #8B4513; /* Marrom terroso */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tm-btn-success:hover,
+.tm-btn-success:focus {
+  background-color: #6E3610; /* Marrom mais escuro */
+}
+
+/* Cores de texto */
+.tm-text-success {
+  color: #4CAF50; /* Verde */
+}
+
+/* Fundo do body */
+body {
+  background-color: #F5F5DC; /* Bege claro para o fundo */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centraliza conteúdo dentro do container */
+}
+
+/* Cabeçalho */
+.tm-header {
+  background-color: #4CAF50; /* Verde */
+  padding: 20px 0;
+}
+
+.tm-site-logo {
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem */
+  max-width: 100%;
+  height: auto;
+}
+
+.tm-site-text-box {
+  text-align: center; /* Centraliza o texto abaixo do logo */
+}
+
+.tm-nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.tm-nav-link.active,
+.tm-nav-link:hover {
+  border-bottom: 2px solid #FFD700; /* Dourado para destaque */
+}
+
+/* Galeria */
+.tm-gallery-title {
+  color: #4CAF50; /* Verde */
+  font-size: 1.5rem;
+}
+
+.tm-gallery-price {
+  color: #8B4513; /* Marrom terroso */
+  font-size: 1.2rem;
+}
+
+/* Links de paginação */
+.tm-paging-link {
+  color: #4CAF50; /* Verde */
+  border: 1px solid #4CAF50;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.tm-paging-link.active,
+.tm-paging-link:hover {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+}
+
+/* Rodapé */
+.tm-footer a {
+  color: #4CAF50; /* Verde */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.tm-footer a:hover {
+  color: #8B4513; /* Marrom terroso */
+}
+
+/* Placeholders */
+.placeholder {
+  background-color: #4CAF50; /* Verde */
+}
+
+.placeholder-2 {
+  background-color: #8B4513; /* Marrom terroso */
+}
+
+/* Classe para a imagem do óleo */
+.imagem-oleo {
+  width: 659px;
+  height: 378px;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Classe para a imagem de benefícios */
+.imagem-beneficios {
+  width: 659px;
+  height: 378px;
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Estilizando a imagem central */
+.central-logo {
+  display: block;
+  margin: 20px auto; /* Centraliza horizontalmente */
+  max-width: 80%;
+  height: auto;
+}
+
+/* Estilos adicionais para garantir responsividade */
+@media (max-width: 768px) {
+  .imagem-oleo,
+  .imagem-beneficios {
+    width: 100%; /* Ajusta a largura para telas menores */
+    height: auto; /* Mantém a proporção */
+  }
+}
